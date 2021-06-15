@@ -4,8 +4,8 @@ from math import log, sqrt
 
 
 class NDigitFibonacciNumber(Solution):
-    def __init__(self, n=3):
-        super().__init__(n)
+    def __init__(self, n=1000):
+        self.N = n
         self.sqrt5 = sqrt(5)
         self.phi = (1 + self.sqrt5) / 2
         self.digit_bound = 10 ** (self.N-1)

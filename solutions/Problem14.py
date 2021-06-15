@@ -2,8 +2,8 @@ from helpers import Solution
 
 
 class LongestCollatzSequenceBelow(Solution):
-    def __init__(self, n=10):
-        super().__init__(n)
+    def __init__(self, n=1000000):
+        self.N = n
         self.memo_dict = {2: 1}
 
     def _get_chain_length(self, x):

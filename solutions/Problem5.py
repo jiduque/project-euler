@@ -15,8 +15,8 @@ def lcm(a, b):
 
 
 class LCMBelow(Solution):
-    def __init__(self, n=10):
-        super().__init__(n)
+    def __init__(self, n=20):
+        self.N = n
 
     def _baby_solution(self):
         upper_bound = reduce(lambda x, y: x*y, range(2, self.N+1))

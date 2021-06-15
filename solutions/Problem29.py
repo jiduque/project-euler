@@ -2,8 +2,8 @@ from helpers import Solution
 
 
 class DistinctPowers(Solution):
-    def __init__(self, n=5):
-        super().__init__(n)
+    def __init__(self, n=100):
+        self.N = n
         self.lower = 2
 
     def _baby_solution(self):

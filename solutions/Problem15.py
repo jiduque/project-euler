@@ -5,7 +5,7 @@ from math import factorial
 
 class LatticePaths(Solution):
     def __init__(self, n=20):
-        super().__init__(n)
+        self.N = n
 
     def _chad_solution(self):
         return factorial(2*self.N) // (factorial(self.N)**2)

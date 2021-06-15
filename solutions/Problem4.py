@@ -1,4 +1,4 @@
-from helpers import Solution
+from helpers import Solution, timeit
 
 
 def is_palindrome(x):
@@ -11,8 +11,8 @@ def is_palindrome(x):
 
 
 class LargestPalindromeProduct(Solution):
-    def __init__(self, n=2):
-        super().__init__(n)
+    def __init__(self, n=3):
+        self.N = n
 
     def _baby_solution(self):
         bound = sum([9 * 10**i for i in range(self.N)])

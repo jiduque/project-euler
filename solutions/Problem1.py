@@ -3,7 +3,7 @@ from helpers import Solution
 
 class SumOfMultiplesOf3And5Below(Solution):
     def __init__(self, n=1000):
-        super().__init__(n)
+        self.N = n
 
     def _baby_solution(self):
         return sum(filter(lambda x: x % 3 == 0 or x % 5 == 0, range(self.N)))

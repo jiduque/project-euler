@@ -13,8 +13,8 @@ def num_divisors(x):
 
 
 class FirstTriangularNumberWithOverNDivisors(Solution):
-    def __init__(self, n=5):
-        super().__init__(n)
+    def __init__(self, n=500):
+        self.N = n
 
     def _baby_solution(self):
         i = 1

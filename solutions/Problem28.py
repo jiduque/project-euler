@@ -4,9 +4,9 @@ import numpy as np
 
 
 class SumOfSpiralDiagonals(Solution):
-    def __init__(self, n=7):
+    def __init__(self, n=1001):
         assert n % 2 == 1
-        super().__init__(n)
+        self.N = n
 
     def _baby_solution(self):
         i, total = 1, 1

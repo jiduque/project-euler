@@ -16,8 +16,8 @@ def sieve_of_erasthenes(bound):
 
 
 class NthPrime(Solution):
-    def __init__(self, n=6):
-        super().__init__(n)
+    def __init__(self, n=10001):
+        self.N = n
 
     def _estimate_bound(self):
         return int(self.N * (log(self.N) + log(log(self.N)))) + 1

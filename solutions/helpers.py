@@ -16,9 +16,6 @@ def timeit(f):
 
 
 class Solution(object):
-    def __init__(self, n):
-        self.N = n
-
     def _baby_solution(self):
         pass
 

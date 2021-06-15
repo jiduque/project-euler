@@ -12,7 +12,7 @@ def is_prime(k):
 
 class LargestPrimeFactorOf(Solution):
     def __init__(self, n=600851475143):
-        super().__init__(n)
+        self.N = n
 
     def _baby_solution(self):
         largest_prime_factor = 1

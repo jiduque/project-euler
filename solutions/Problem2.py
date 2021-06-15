@@ -4,7 +4,7 @@ from math import sqrt, log
 
 class SumOfEvenFibonacciBelow(Solution):
     def __init__(self, n=4000000):
-        super().__init__(n)
+        self.N = n
         self.sqrt5 = sqrt(5)
         self.phi3 = ((1 + self.sqrt5) / 2) ** 3
         self.psi3 = ((1 - self.sqrt5) / 2) ** 3

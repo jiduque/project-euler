@@ -2,8 +2,8 @@ from helpers import Solution
 
 
 class SumOfSquareDifference(Solution):
-    def __init__(self, n=10):
-        super().__init__(n)
+    def __init__(self, n=100):
+        self.N = n
 
     def _baby_solution(self):
         vals = range(1, self.N+1)
