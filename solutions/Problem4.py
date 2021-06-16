@@ -1,4 +1,4 @@
-from helpers import Solution, timeit
+from helpers import Solution
 
 
 def is_palindrome(x):

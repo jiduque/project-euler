@@ -1,4 +1,4 @@
-from helpers import Solution, timeit
+from helpers import Solution
 
 from functools import reduce
 from os import path
@@ -35,11 +35,5 @@ class LargestProductInASeries(Solution):
         sub_data = filter(lambda x: len(x) >= self.N, self.data)
         return max(map(self._find_sub_solution, sub_data))
 
-    @timeit
     def solve(self):
         self._solve(chad=False)
-
-
-if __name__ == '__main__':
-    prob = LargestProductInASeries()
-    prob.solve()

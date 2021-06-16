@@ -23,12 +23,22 @@ class Solution(object):
         pass
 
     def _solve(self, chad):
+        string_to_print = "Solution"
+
         if chad:
             solution = self._chad_solution()
         else:
             solution = self._baby_solution()
 
-        print(f"Solution for {self.N}: {solution}")
+        if self.N:
+            string_to_print += f" for {self.N}"
+
+        if solution:
+            string_to_print += f": {solution}"
+        else:
+            string_to_print = "No " + string_to_print
+
+        print(string_to_print)
 
     def solve(self):
         pass
