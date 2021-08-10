@@ -7,7 +7,7 @@ from Problem3 import LargestPrimeFactorOf
 def sieve_of_erasthenes(bound):
     prime = [[i, True] for i in range(bound + 1)]
     p = 2
-    while p* p <= bound:
+    while p * p <= bound:
         if prime[p][1]:
             for i in range(p * p, bound + 1, p):
                 prime[i][1] = False
