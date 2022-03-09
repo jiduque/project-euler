@@ -33,7 +33,7 @@ class Solution(object):
         if self.N:
             string_to_print += f" for {self.N}"
 
-        if solution:
+        if solution is not None:
             string_to_print += f": {solution}"
         else:
             string_to_print = "No " + string_to_print
