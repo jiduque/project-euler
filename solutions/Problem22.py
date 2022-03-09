@@ -21,8 +21,3 @@ class NamesScores(Solution):
 
     def solve(self):
         self._solve(chad=False)
-
-
-if __name__ == '__main__':
-    problem = NamesScores()
-    problem.solve()
